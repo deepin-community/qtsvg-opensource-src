@@ -1,0 +1,3 @@
+usr/include/*/qt5/QtSvg/5.*
+usr/lib/*/libQt5Svg.la
+usr/lib/*/qt5/mkspecs/modules/qt_lib_svg_private.pri

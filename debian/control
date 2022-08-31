@@ -1,0 +1,89 @@
+Source: qtsvg-opensource-src
+Section: libs
+Priority: optional
+Maintainer: Deepin Developer <deepin-dev@deepin.org>
+Uploaders: Deepin Packages Builder <packages@deepin.org>
+Build-Depends: dbus,
+               debhelper-compat (= 13),
+               dpkg-dev (>= 1.17.14),
+               libqt5opengl5-dev (>= 5.15.3~),
+               pkg-kde-tools (>= 0.15.17),
+               qtbase5-dev (>= 5.15.3~),
+               qtbase5-private-dev (>= 5.15.3~),
+               zlib1g-dev
+Build-Depends-Indep: qdoc-qt5 (>= 5.15.3~) <!nodoc>,
+                     qhelpgenerator-qt5 (>= 5.15.3~) <!nodoc>,
+                     qtattributionsscanner-qt5 (>= 5.15.3~) <!nodoc>,
+                     qtbase5-doc-html (>= 5.15.3~) <!nodoc>
+Standards-Version: 4.6.0
+Homepage: https://doc.qt.io/qt-5/qtsvg-index.html
+
+Package: libqt5svg5
+Architecture: any
+Multi-Arch: same
+Provides: qtsvg-abi-5-15-3
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 5 SVG module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtSvg module provides classes for displaying the contents of SVG files.
+ .
+ Scalable Vector Graphics (SVG) is a language for describing two-dimensional
+ graphics and graphical applications in XML.
+
+Package: libqt5svg5-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: libqt5svg5 (= ${binary:Version}), ${misc:Depends}
+Description: Qt 5 SVG module development files
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtSvg module provides classes for displaying the contents of SVG files.
+ .
+ Scalable Vector Graphics (SVG) is a language for describing two-dimensional
+ graphics and graphical applications in XML.
+ .
+ This package contains the header development files used for building Qt 5
+ applications using QtSvg library.
+
+Package: qtsvg5-examples
+Architecture: any
+Section: x11
+Multi-Arch: same
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 5 SVG examples
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains Qt 5 SVG examples.
+
+Package: qtsvg5-doc
+Build-Profiles: <!nodoc>
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: Qt 5 SVG documentation
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the documentation for the Qt 5 SVG libraries.
+
+Package: qtsvg5-doc-html
+Build-Profiles: <!nodoc>
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: Qt 5 SVG HTML documentation
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the HTML documentation for the Qt 5 SVG
+ libraries.
