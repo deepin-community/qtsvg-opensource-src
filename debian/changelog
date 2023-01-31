@@ -1,3 +1,9 @@
+qtsvg-opensource-src (5.15.8-1+dde) UNRELEASED; urgency=medium
+
+  * New upstream release (5.15.8).
+
+ -- Lu YaNing <luyaning@uniontech.com>  Tue, 31 Jan 2023 14:33:15 +0800
+
 qtsvg-opensource-src (5.15.7-1+dde) unstable; urgency=medium
 
   * New upstream release (5.15.7).
